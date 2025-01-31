@@ -1,2 +1,2 @@
-# Personal-Portfolio-Webpage
-My own website to showcase my code and projects.
+# JulyW.com
+[julyw.com](https://julyw.com/) is my personal portfolio website to introduce myself and display my projects.
