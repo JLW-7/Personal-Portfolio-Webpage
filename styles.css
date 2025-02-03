@@ -63,16 +63,18 @@ header a{
 
 
 nav a {
-  margin-left: 50px; 
+  margin-left: 20px; 
   font-size: 18px;
   color: inherit;
   text-decoration: none;
   padding: 10px 15px;
+  transition: all 0.1s ease;
 }
 
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.178);
   border-radius: 20px;
+  color: rgb(238, 238, 238)
 }
 
 .banner {
@@ -297,6 +299,7 @@ nav a:hover {
 .contact {
   background-color: #3066ca;
   padding:100px;
+  padding-bottom: 150px;
 }
 
 .contact h3{
@@ -324,6 +327,34 @@ nav a:hover {
   transition: all 0.1s ease;
 }
 
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.popup {
+  /* visibility: hidden; */
+  width: 100px;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -125%; /* Position above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  white-space: nowrap;
+}
+
+.icon-container:hover .popup {
+  visibility: visible;
+  opacity: 1;
+}
+
 .fa-envelope:hover{
   color: rgb(216, 216, 216);
 }
@@ -338,6 +369,14 @@ nav a:hover {
 
 .fa-github:hover{
   color: #000000;
+}
+
+.fa-stack-overflow:hover{
+  color: rgb(255, 153, 0);
+}
+
+.fa-facebook:hover{
+  color:  #256dfe;
 }
 
 
@@ -367,18 +406,17 @@ footer p {
   header {
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
   }
 
   nav {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
 
   nav a {
     margin-left: 0;
-    font-size: 16px;
+    font-size: 9px;
   }
 
   .banner {
@@ -405,7 +443,7 @@ footer p {
   }
 
   .banner p {
-    font-size: 16px;
+    font-size: 10px;
   }
 
   .about-me {
@@ -467,4 +505,3 @@ footer p {
 
 
  
-
