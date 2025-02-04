@@ -418,6 +418,9 @@ footer p {
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
+  #loading-screen img {
+    width: 100%;
+  }
   header {
     flex-direction: column;
     align-items: center;
@@ -437,7 +440,7 @@ footer p {
   .banner {
     flex-direction: column;
     align-items: center;
-    text-align: right;
+    text-align: left;
     margin-left: 0;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -456,7 +459,11 @@ footer p {
   }
 
   .banner p {
-    font-size: 5px;
+    font-size: 8px;
+  }
+
+  .banner-text{
+    gap: 2px;
   }
 
   .about-me {
@@ -472,13 +479,14 @@ footer p {
 
   .about-me h3{
     font-size: 40px;
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 20px;
   }
   .about-me p {
     margin: 0;
     padding: 20px;
+    text-align: left;
   }
 
   .skills {
@@ -487,7 +495,9 @@ footer p {
 
   .skills h3 {
     font-size: 40px;
-    text-align: right;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
   }
 
   .skills-content {
@@ -522,11 +532,20 @@ footer p {
 
   .contact h3{
     font-size: 40px;
+    text-align: center;
   }
 
   .contact-content-1 {
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
+  }
+
+  .contact-content-1 i{
+    font-size: 37px;
+  }
+
+  .popup {
+    width: 80px;
+    font-size: 8px;
+    padding: 5px;
   }
 }
