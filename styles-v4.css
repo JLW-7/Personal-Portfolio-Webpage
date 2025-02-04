@@ -415,7 +415,8 @@ footer p {
   margin: 10px 0;
 }
 
-/* Mobile adjustments */
+
+/* Mobile Adjustments */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -436,16 +437,14 @@ footer p {
   .banner {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: right;
     margin-left: 0;
     margin-top: 50px;
     margin-bottom: 50px;
   }
 
   .banner img {
-    width: 50%;
-    height: auto;
-    margin: 0;
+    visibility: hidden;
   }
 
   .banner-heading h2 {
@@ -457,7 +456,7 @@ footer p {
   }
 
   .banner p {
-    font-size: 10px;
+    font-size: 5px;
   }
 
   .about-me {
@@ -471,7 +470,12 @@ footer p {
     margin-right: 0;
   }
 
-  .about-me h3,
+  .about-me h3{
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+  }
   .about-me p {
     margin: 0;
     padding: 20px;
@@ -479,6 +483,11 @@ footer p {
 
   .skills {
     text-align: center;
+  }
+
+  .skills h3 {
+    font-size: 40px;
+    text-align: right;
   }
 
   .skills-content {
@@ -490,6 +499,10 @@ footer p {
 
   .projects {
     padding: 50px;
+  }
+
+  .projects h3 {
+    font-size: 40px;
   }
 
   .project-card {
@@ -507,15 +520,13 @@ footer p {
     text-align: center;
   }
 
+  .contact h3{
+    font-size: 40px;
+  }
+
   .contact-content-1 {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 }
-
-  
-
-
-
- 
